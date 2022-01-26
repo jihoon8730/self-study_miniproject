@@ -1,10 +1,6 @@
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 body {
   margin: 0px;
-  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 /* container */
@@ -49,5 +45,129 @@ body {
 .sub {
   width: 100%;
   height: 230px;
-  background-color: yellowgreen;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 50px 0px 10px 0px;
+}
+
+.sub p {
+  font-size: 15px;
+}
+
+.sub button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #40514e;
+  color: whitesmoke;
+}
+
+/* menu */
+.menu {
+  width: 100%;
+  height: 300px;
+  background-color: royalblue;
+}
+
+.menu-content {
+  text-align: center;
+  padding: 20px 20px 15px 20px;
+  color: whitesmoke;
+}
+
+.fordbox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-content-text {
+  font-size: 20px;
+}
+
+.menu-box {
+  font-size: 13px;
+  width: 20%;
+  max-width: 180px;
+  height: auto;
+}
+
+.menu-box p {
+  font-size: 11px;
+}
+
+.menu-box i {
+  width: 80px;
+  height: 80px;
+  color: royalblue;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+/* anme */
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.portfolio-item1 {
+  position: relative;
+  background-image: url(../image/portfolio-1.jpg);
+  width: 50%;
+  height: 350px;
+  background-size: cover;
+  float: left;
+}
+.portfolio-container {
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+.portfolio-text {
+  color: white;
+  padding: 50px;
+  width: 100%;
+}
+
+.white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0px solid white;
+  transition: border 0.5s;
+}
+
+.white-box:hover {
+  border: 30px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-item1 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.footer-icon {
+  color: white;
+  background: #4e61c0;
+  border-radius: 100px;
+  padding: 23px;
+}
+
+.row-3 {
+  width: 33%;
+  text-align: center;
 }
